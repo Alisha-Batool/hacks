@@ -1,10 +1,10 @@
-#include <stdio.h>
-#include <stdlib.h>
 
-int main()
+#include <stdlib.h>
+#include <stdio.h>
+int main(int argc, char **argv)
 {
   float agi,numChildren,childCredit,tax,totalTax;
-
+  char c = 'N';
 
  printf("Please enter your adjusted gross income (AGI): ");
   scanf("%lf", &agi);
@@ -12,7 +12,7 @@ int main()
   getchar(); 
 
   printf("Do you have any children? (Y) or (N)? ");
-  c = getchar();
+  c =getchar();
 
   if(c == 'y' || c == 'Y') {
     printf("How many children do you have? ");
