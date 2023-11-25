@@ -29,7 +29,8 @@ double getAirDistance(double originLatitude,double originLongitude,double destin
 // (units may vary) and the percentage of the speed of light
 double lorentzTimeDilation(double t, double percentC)
 {
-    double c = 299792458; // speed of light in m/s 299,792,458
+    // speed of light in m/s 299,792,458
+    double c = 299792458; 
     double v = percentC * c;
-    return t/ sqrt(1 - pow(v/c, 2));
+    return (t / sqrt(1 - pow(v/c, 2)));
 }
