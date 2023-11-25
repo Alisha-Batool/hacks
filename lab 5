@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+int main()
+{ 
+    //lat1 and lat2 represents
+    double lat1,lat2,lon1,lon2;
+    //double lat1;
+    //double lat2;
+    //double lon1;
+    //double lon2;
+    printf("Enter lattitude of origin:");
+    scanf("%lf",& lat1);
+    printf("Enter longitude of origin:");
+    scanf("%lf",& lon1);
+    printf("Enter lattitude of destination: ");
+    scanf("%lf", &lon2);
+    printf("Enter longitude of destination:");
+    scanf("%lf", &lat2);
+
+}
