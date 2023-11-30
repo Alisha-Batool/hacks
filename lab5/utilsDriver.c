@@ -1,3 +1,6 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
 // prototypes
 double degreesToRadians(double degree);
 double getAirDistance(double originLatitude,double originLongitude,double destinationlatitude,double destinationLongitude);
@@ -32,5 +35,6 @@ double lorentzTimeDilation(double t, double percentC)
     // speed of light in m/s 299,792,458
     double c = 299792458; 
     double v = percentC * c;
-    return (t / sqrt(1 - pow(v/c, 2)));
+    double dilated_time= (t / sqrt(1 - pow(v,2)/pow(c, 2)));
+    return dilated_time;
 }
